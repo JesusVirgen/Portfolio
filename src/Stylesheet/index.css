@@ -1,0 +1,26 @@
+@import "Components/components";
+  
+.var-color {
+    color: var(--imp-text-color);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#title-section {
+    font-size: var(--space-base);
+}
+
+button:focus {
+    box-shadow: none;
+}
+
+.scroll-animation-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.scroll-animation-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

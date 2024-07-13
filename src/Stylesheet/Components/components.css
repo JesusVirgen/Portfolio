@@ -1,0 +1,10 @@
+@import "preloader";
+@import "navbar";
+@import "scrollbar";
+@import "home";
+@import "footer";
+@import "projects";
+@import "about";
+@import "experience";
+@import "contact";
+@import "variables";

@@ -1,0 +1,344 @@
+#home {
+    height: 100vh;
+}
+
+.wave {
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(14deg);
+    }
+    20% {
+        transform: rotate(-8deg);
+    }
+    30% {
+        transform: rotate(14deg);
+    }
+    40% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.home-header {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#text-transiction {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.home-section {
+    min-height: 100vh;
+    background-image: var(--image-gradient), url(../../Assets/code-img.jpg); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.home-content {
+    padding: 9rem 0 2rem;
+    color: whitesmoke;
+    text-align: left;
+}
+
+.heading {
+    font-size: 5em;
+    padding-bottom: 50px;
+}
+
+.heading-name {
+    font-size: 5em;
+    padding-bottom: 80px;
+}
+
+.main-name {
+    color: #1c8b9e;
+}
+
+.Typewriter__wrapper {
+    font-size: 4em;
+    color: #1c8b9e;
+    font-weight: 600;
+}
+
+.Typewriter__cursor {
+    font-size: 4em;
+    color: #1c8b9e;
+}
+
+.myAvtar {
+    justify-content: center;
+    padding-top: 9em;
+}
+
+.home-about-description {
+    padding-top: 100px;
+}
+
+.img-fluid {
+    border-radius: 50%; 
+    box-shadow: 0 0 150px rgba(88, 244, 255, 0.897); 
+    transition: transform 0.5s ease;
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+}
+
+.social-icons {
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: transform 0.5s ease;
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+}
+
+.icon-colour {
+    svg {
+        height: 50px;
+        width: 50px;
+        color: #001c97;
+    }
+}
+
+.about-activities{
+    padding: 2em 0 8em 0;
+}
+
+.about-activity {
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(207, 207, 207);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.925);
+    transition: transform 0.5s ease;
+}
+
+.about-activity:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.774);
+}
+
+.about-activity:nth-child(1) {
+    justify-content: flex-end;
+    padding-right: 3em;
+}
+
+.about-activity:nth-child(2) {
+    justify-content: center; 
+}
+
+.about-activity:nth-child(3) {
+    justify-content: flex-start;
+    padding-left: 5em;
+}
+
+.about-activity:nth-child(4) {
+    justify-content: flex-end;
+    padding-right: 4em;
+}
+
+.about-activity:nth-child(5) {
+    justify-content: center;
+    padding-left: 2em;
+}
+
+.about-activity:nth-child(6) {
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+.about-activity:nth-child(7) {
+    justify-content: flex-start;
+    padding-left: 11em;
+}
+
+.about-activity:nth-child(8) {
+    justify-content: center;
+    padding-right: 4em;
+}
+
+.about-activity:nth-child(9) {
+    justify-content: flex-start;
+    padding-left: 4em;
+}
+
+.about-activity:nth-child(10) {
+    justify-content: flex-end;
+    padding-right: 7em;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .heading {
+        font-size: 4em;
+    }
+
+    .heading-name {
+        font-size: 4em;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 3em;
+    }
+
+    .Typewriter__cursor {
+        font-size: 3em;
+    }
+
+    .myAvtar {
+        padding-top: 7em;
+    }
+
+    .home-about-description {
+        padding-top: 80px;
+
+        .var-color {
+            font-size: 1em;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 3em;
+    }
+
+    .heading-name {
+        font-size: 3em;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 2.5em;
+    }
+
+    .Typewriter__cursor {
+        font-size: 2.5em;
+    }
+
+    .myAvtar {
+        padding-top: 6em;
+    }
+
+    .about-activities {
+        .about-activity {
+            font-size: 24px;
+        }
+    }
+
+    .home-about-description {
+        padding-top: 60px;
+
+        .var-color {
+            font-size: 0.7em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5em;
+    }
+
+    .heading-name {
+        font-size: 2.5em;
+        padding-bottom: 60px;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .Typewriter__cursor {
+        display: none;
+    }
+
+    .myAvtar {
+        padding-top: 0;
+
+        .img-fluid {
+            width: 50%;
+            margin: 2em;
+        }
+    }
+
+    .home-about-description {
+        padding-top: 50px;
+
+        .var-color {
+            font-size: 0.7em;
+        }
+    }
+
+    #pro-languages {
+        padding: 0;
+    }
+
+    .about-activities {
+        .about-activity {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .heading {
+        font-size: 2em;
+    }
+
+    .heading-name {
+        font-size: 2em;
+        padding-bottom: 40px;
+    }
+
+    .Typewriter__wrapper {
+        font-size: 1.5em;
+    }
+
+    .myAvtar {
+        padding-top: 3em;
+    }
+
+    .home-about-description {
+        .var-color {
+            font-size: 0.5em;
+        }
+    }
+
+    .img-fluid {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .about-activities {
+        padding: 0 0.5rem;
+
+        .about-activity {
+            font-size: 15px;
+        }
+    }
+}

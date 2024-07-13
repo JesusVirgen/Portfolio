@@ -1,0 +1,93 @@
+.experience-section {
+    min-height: 100vh;
+    background-image: var(--image-gradient), url(../../Assets/project-img.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    color: white;
+    align-content: center;
+    padding-top: 15vh;
+}
+
+.experience-row {
+    padding: 0 7em 0 7em;
+
+    .experience-col {
+        align-content: center;
+
+        .courses-dates h4 {
+            text-align: center;
+        }
+    }
+}
+
+.experience-description {
+    padding-left: 3em;
+    text-align: justify;
+
+    h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .experience-row {
+        padding: 0 5em;
+    }
+
+    .experience-description {
+        padding-left: 2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .experience-section {
+        #title-section .var-color {
+            font-size: 0.7em;
+        }
+    }
+
+    .experience-row {
+        padding: 0 3em;
+    }
+
+    .experience-description {
+        padding-left: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding-top: 10vh;
+
+        #title-section .var-color {
+            font-size: 0.7em;
+        }
+    }
+
+    .experience-row {
+        padding: 0 2em;
+    }
+
+    .experience-description {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .experience-section {
+        padding-top: 8vh;
+
+        #title-section .var-color {
+            font-size: 0.5em;
+        }
+    }
+
+    .experience-row {
+        padding: 0 1em;
+    }
+
+    .experience-description {
+        padding-left: 0;
+        font-size: 14px;
+    }
+}
