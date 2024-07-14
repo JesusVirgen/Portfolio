@@ -1,5 +1,6 @@
 html {
     --image-gradient: linear-gradient(to bottom left,rgba(17, 16, 16, 0.863), rgba(12, 10, 22, 0.863));
+    --image-gradient-light: linear-gradient(to bottom left,rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.603));
     --imp-text-color: #1c8b9e;
 
     /*spaicing*/

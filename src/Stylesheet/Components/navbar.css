@@ -1,15 +1,20 @@
 .sticky {
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out;
   box-shadow: 0px 10px 10px 0px #330047;
   backdrop-filter: blur(15px);
 }
 
 .navbar {
-  background-color: #270036;
   position: fixed;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out;
   padding: 0.3rem 2rem;
   font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--image-gradient-light), url(../../Assets/banner.gif); 
+  background-size: cover; 
+  background-position: center; 
 }
 
 .navbar-toggler {
@@ -26,7 +31,6 @@
   margin-top: 5px;
   margin-bottom: 5px;
   transform: rotate(0deg);
-  left: 0;
   opacity: 1;
 }
 
@@ -37,42 +41,31 @@
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
-  transition: transform 0.35s ease-in-out !important;
+  transition: transform 0.35s ease-in-out;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(135deg);
+  opacity: 0.9;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(2) {
-  height: 12px !important;
-  visibility: hidden !important;
-  background-color: transparent !important;
+  height: 12px;
+  visibility: hidden;
+  background-color: transparent;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(3) {
-  position: absolute !important;
-  left: 12px !important;
-  top: 10px !important;
-  transform: rotate(-135deg) !important;
-  opacity: 0.9 !important;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  transform: rotate(-135deg);
+  opacity: 0.9;
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
-  }
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
 .navbar-brand {
   color: rgb(250, 250, 250) !important;
 }
@@ -87,12 +80,6 @@
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem !important;
-  }
-}
-
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
@@ -100,7 +87,7 @@
 
 .navbar-nav .nav-item a {
   font-weight: 400;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out;
   position: relative;
   z-index: 1;
 }
@@ -116,7 +103,7 @@
   bottom: 1px;
   left: 0;
   z-index: -1;
-  transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out;
 }
 
 .navbar-nav .nav-item a:hover::after {
@@ -142,6 +129,104 @@
   background-color: #004b50;
   border-color: #004b50;
 }
+
 .fork-btn-inner::after {
   display: none;
+}
+
+.navbar-logo {
+  display: none;
+  height: 40px;
+}
+
+#navbar-text {
+  display: block;
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+  
+  .fork-btn {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .navbar-nav {
+    .nav-item {
+      margin-left: 0;
+    }
+
+    .nav-link {
+      padding-right: 0.6rem;
+      padding-left: 0.6rem;
+    }
+  }
+  
+  .fork-btn {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .fork-btn {
+    font-size: 0.8em;
+  }
+
+  .navbar-logo {
+    display: block;
+  }
+
+  #navbar-text {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+  
+  .fork-btn {
+    font-size: 0.7em;
+  }
+  
+  .navbar-toggler span {
+    height: 3px;
+    width: 25px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
 }

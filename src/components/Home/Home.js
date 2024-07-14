@@ -3,14 +3,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Works";
+import ScrollAnimation from '../ScrollText';
+
 
 function Home() {
     return (
         <section>
             <Container fluid className="home-section" id="home">
                 <Particle />
-                    <Container className="home-content">
-                        <Row>
+                <Container className="home-content">
+                    <Row>
+                        <ScrollAnimation>
                             <Col className="home-header">
                                 <h1 className="heading">
                                         ¡Hola! 
@@ -28,9 +31,10 @@ function Home() {
                                     <Type />
                                 </div>
                             </Col>
-                        </Row>
-                    </Container>
+                        </ScrollAnimation>
+                    </Row>
                 </Container>
+            </Container>
             <Home2 />
         </section>
     );

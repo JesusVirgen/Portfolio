@@ -4,7 +4,6 @@ import { GiGraduateCap } from "react-icons/gi";
 import { MdPlace } from "react-icons/md";
 import { IoTime } from "react-icons/io5";
 
-
 function Toolstack() {
   return (
     <Container className="about-container">
@@ -23,6 +22,7 @@ function Toolstack() {
           </div>
         </Col>
       </Row>
+      <div className="separator"></div>
       <Row>
         <Col md={3} className="experience-col">
           <div className="courses-dates">

@@ -160,7 +160,7 @@
     }
 
     .about-description-text {
-        padding: 2em 1em 4em 1em;
+        padding: 1em 1em 2em 1em;
         font-size: 18px;
     }
 
@@ -194,4 +194,12 @@
     .about-activities .about-activity {
         margin: 1em 0;
     }
+
+    .study-date {
+        margin-bottom: 1em;
+    }
+
+    .uni-name {
+        margin-bottom: 1em;
+    }     
 }

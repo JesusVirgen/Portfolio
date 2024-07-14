@@ -7,11 +7,13 @@
 
 @media (max-width: 767px) {
     .footer-copywright {
-    text-align: center;
+        text-align: center;
+        font-size: 12px;
     }
 
     .footer-body {
-    text-align: center;
+        text-align: center;
+        font-size: 12px;
     }
 }
 

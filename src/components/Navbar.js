@@ -13,6 +13,8 @@ import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { GoProjectRoadmap } from "react-icons/go";
 import { PiFlyingSaucerBold } from "react-icons/pi";
+import logo from "../Assets/portfolio.png"; 
+
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -38,7 +40,8 @@ function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
         <Container>
             <Navbar.Brand className="d-flex">
-                My Portfolio
+                <span id="navbar-text">Mi Portafolio</span>
+                <img src={logo} alt="Logo" className="navbar-logo" />
             </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => updateExpanded(expand ? false : "expanded")}>
                     <span></span>
@@ -78,7 +81,7 @@ function NavBar() {
                     </Nav.Item>
 
                     <Nav.Item className="fork-btn">
-                        <Button href="/" target="_blank" className="fork-btn-inner">
+                        <Button href="https://github.com/JesusVirgen/Portfolio" target="_blank" className="fork-btn-inner">
                             <CgGitFork style={{ fontSize: "1.2em" }} />
                             <AiFillStar style={{ fontSize: "1.1em" }} />
                         </Button>

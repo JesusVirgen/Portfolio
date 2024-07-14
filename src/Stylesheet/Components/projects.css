@@ -24,6 +24,10 @@
   opacity: 0.9;
   transition: all 0.5s ease 0s;
   height: 100% !important;
+
+  .card-body {
+    color: white;
+  }
 }
 .project-card-view:hover {
   transform: scale(1.02);

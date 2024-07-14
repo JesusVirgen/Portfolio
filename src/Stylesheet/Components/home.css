@@ -55,7 +55,7 @@
 }
 
 .home-content {
-    padding: 9rem 0 2rem;
+    padding: 13rem 0 2rem;
     color: whitesmoke;
     text-align: left;
 }
@@ -95,6 +95,7 @@
 }
 
 .img-fluid {
+    cursor: pointer;
     border-radius: 50%; 
     box-shadow: 0 0 150px rgba(88, 244, 255, 0.897); 
     transition: transform 0.5s ease;
@@ -135,6 +136,7 @@
     color: rgb(207, 207, 207);
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.925);
     transition: transform 0.5s ease;
+    cursor: pointer;
 }
 
 .about-activity:hover {
@@ -287,7 +289,7 @@
     }
 
     .home-about-description {
-        padding-top: 50px;
+        padding-top: 0px;
 
         .var-color {
             font-size: 0.7em;
@@ -306,6 +308,10 @@
 }
 
 @media (max-width: 576px) {
+    .home-content {
+        padding: 16em 0 2em 0;
+    }
+
     .heading {
         font-size: 2em;
     }
@@ -324,6 +330,8 @@
     }
 
     .home-about-description {
+        padding: 0;
+
         .var-color {
             font-size: 0.5em;
         }
@@ -332,6 +340,7 @@
     .img-fluid {
         width: 70%;
         margin: 0 auto;
+        box-shadow: 0 0 80px rgba(88, 244, 255, 0.897); 
     }
 
     .about-activities {
