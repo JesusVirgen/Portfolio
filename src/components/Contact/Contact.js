@@ -18,7 +18,7 @@ useEffect(() => {
 return (
     <Container fluid className="resume-section">
         <ScrollAnimation>
-            <Col xs={12} md={6}>
+            <Col>
                 <h1 id="title-section">
                     <strong className="var-color">Buscame</strong>
                 </h1>

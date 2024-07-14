@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact/Contact";
 import Experience from "./components/Experience/Experience";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate

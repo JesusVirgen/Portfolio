@@ -191,8 +191,12 @@
         height: 7em;
     }
 
-    .about-activities .about-activity {
-        margin: 1em 0;
+    .about-activities {
+        margin: 2em 0 4em 0;
+
+        .about-activity {
+            margin: 1em 0;
+        }
     }
 
     .study-date {
