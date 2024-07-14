@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.beccd6fb.css",
-    "main.js": "/Portfolio/static/js/main.42e07339.js",
+    "main.css": "/Portfolio/static/css/main.14a57109.css",
+    "main.js": "/Portfolio/static/js/main.67fbf638.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/about-img.jpg": "/Portfolio/static/media/about-img.a1fb1513eb0807948763.jpg",
     "static/media/contac.img.jpg": "/Portfolio/static/media/contac.img.8e19af769e7031f16635.jpg",
     "static/media/project-img.jpg": "/Portfolio/static/media/project-img.ffada8fa019880237304.jpg",
+    "static/media/banner.gif": "/Portfolio/static/media/banner.c6f4be20262aa3436d33.gif",
     "static/media/code-img.jpg": "/Portfolio/static/media/code-img.24bc6af703e2209adc70.jpg",
     "static/media/bg-home.jpg": "/Portfolio/static/media/bg-home.51112699cd220734d627.jpg",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.fcd268cd66cb9bce59fc.png",
     "static/media/univer-logo.png": "/Portfolio/static/media/univer-logo.455cf5491bf38f5bb02d.png",
     "static/media/git-img.jpeg": "/Portfolio/static/media/git-img.92b1f99fe22cac92d66e.jpeg",
     "static/media/profile.jpeg": "/Portfolio/static/media/profile.7a70f05c049003c78426.jpeg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.907030f149c6f5891a0f.svg",
     "index.html": "/Portfolio/index.html",
-    "main.beccd6fb.css.map": "/Portfolio/static/css/main.beccd6fb.css.map",
-    "main.42e07339.js.map": "/Portfolio/static/js/main.42e07339.js.map",
+    "main.14a57109.css.map": "/Portfolio/static/css/main.14a57109.css.map",
+    "main.67fbf638.js.map": "/Portfolio/static/js/main.67fbf638.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.beccd6fb.css",
-    "static/js/main.42e07339.js"
+    "static/css/main.14a57109.css",
+    "static/js/main.67fbf638.js"
   ]
 }
