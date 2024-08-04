@@ -6,6 +6,7 @@
   background-color: var(--bg-color-base); 
   background-size: cover; 
   background-position: center; 
+  padding-top: 15vh;
 } 
 
 .project-card {
