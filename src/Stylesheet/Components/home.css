@@ -97,7 +97,7 @@
 
 
 .about-activities{
-    padding: 3em 5em 8em 5em;
+    padding: 3em 6em 8em 6em;
 }
 
 .about-activity {
@@ -107,7 +107,7 @@
     font-size: 28px;
     font-weight: 400;
     color: rgb(207, 207, 207);
-    transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
     cursor: pointer;
     margin: 1rem 0;
 
@@ -118,13 +118,13 @@
 }
 
 .about-activity:hover {
-    transform: scale(1.1);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.774);
+    transform: scale(0.9);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.774);
 }
 
 .about-activity:nth-child(1) {
     justify-content: flex-end;
-    padding-right: 5em;
+    padding-right: 2em;
     color: var(--bg-color-python);
 
     svg {
@@ -139,7 +139,7 @@
 
 .about-activity:nth-child(3) {
     justify-content: flex-start;
-    padding-left: 5em;
+    padding-left: 3em;
     color: var(--bg-color-mysql);
 
     .sql-text {
@@ -153,31 +153,31 @@
 
 .about-activity:nth-child(4) {
     justify-content: flex-end;
-    padding-right: 16em;
+    padding-right: 0;
     color: var(--bg-color-javascript);
 }
 
 .about-activity:nth-child(5) {
     justify-content: center;
-    padding-left: 2em;
+    padding-right: 3em;
     color: var(--bg-color-react);
 }
 
 .about-activity:nth-child(6) {
     justify-content: flex-end;
-    padding-right: 5em;
+    padding-right: 4em;
     color: var(--bg-color-html)
 }
 
 .about-activity:nth-child(7) {
     justify-content: flex-start;
-    padding-left: 15em;
+    padding-left: 2em;
     color: var(--bg-color-css)
 }
 
 .about-activity:nth-child(8) {
     justify-content: center;
-    padding-right: 4em;
+    padding-left: 5em;
     color: var(--bg-color-tailwindcss);
 }
 
@@ -189,7 +189,7 @@
 
 .about-activity:nth-child(10) {
     justify-content: flex-end;
-    padding-right: 7em;
+    padding-right: 4em;
 }
 
 /* Media Queries for Responsive Design */
