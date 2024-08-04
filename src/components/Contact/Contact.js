@@ -26,22 +26,22 @@ return (
                     <span className="var-color">Aqui me puedes encontrar y contactarme</span>
                 </p>
                 <ul>
-                    <li className="social-icons">
+                    <li className="social-icons social-media">
                         <a href="https://github.com/JesusVirgen" target="_blank" rel="noreferrer" className="icon-colour">
                             <AiFillGithub />
                         </a>
                     </li>
-                    <li className="social-icons">
+                    <li className="social-icons social-media">
                         <a href="https://x.com/Jesus_Virgen_C" target="_blank" rel="noreferrer" className="icon-colour">
                             <BsTwitterX />
                         </a>
                     </li>
-                    <li className="social-icons">
+                    <li className="social-icons social-media">
                         <a href="https://www.linkedin.com/in/jes%C3%BAs-virgen-681009274/" target="_blank" rel="noreferrer" className="icon-colour">
                             <FaLinkedinIn />
                         </a>
                     </li>
-                    <li className="social-icons">
+                    <li className="social-icons social-media">
                         <a href="https://www.instagram.com/jesus.cervantes.22?igsh=MWxqYnpkMDhsemJ1eQ==" target="_blank" rel="noreferrer" className="icon-colour">
                             <AiFillInstagram />
                         </a>

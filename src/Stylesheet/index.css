@@ -1,10 +1,21 @@
+@import url('https://fonts.cdnfonts.com/css/san-andreas');
+@import url('https://fonts.cdnfonts.com/css/ep-dominate');
 @import "Components/components";
+
+h1 {
+    font-family: 'SAN ANDREAS', sans-serif;
+}
+
+h3, h4, p, span {
+    font-family: 'EP Dominate', sans-serif;
+}
   
 .var-color {
     color: var(--imp-text-color);
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-family: 'SAN ANDREAS', sans-serif;
 }
+
 
 #title-section {
     font-size: var(--space-base);

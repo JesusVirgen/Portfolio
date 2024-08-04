@@ -1,8 +1,23 @@
 html {
+    /*colors*/
     --image-gradient: linear-gradient(to bottom left,rgba(17, 16, 16, 0.863), rgba(12, 10, 22, 0.863));
     --image-gradient-light: linear-gradient(to bottom left,rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.795));
     --imp-text-color: #1c8b9e;
+    --bg-color-base: #04001a;
+    --bg-color-mysql: #00758f;
+    --bg-color-ruby: #cc0000;
+    --bg-color-python: #646464;
+    --bg-color-python-svg: #ffde57;
+    --bg-color-javascript: #F0DB4F;
+    --bg-color-react: #61DBFB;
+    --bg-color-html: #e34c26;
+    --bg-color-css: #264de4;
+    --bg-color-tailwindcss: #a5f3fc;
+    --bg-color-git: #F1502F;
+
 
     /*spaicing*/
-    --space-base: 4em;
+    --space-base: 3em;
+
+
 }

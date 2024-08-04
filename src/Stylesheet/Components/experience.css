@@ -1,11 +1,10 @@
 .experience-section {
     min-height: 100vh;
-    background-image: var(--image-gradient), url(../../Assets/project-img.jpg); 
+    background-color: var(--bg-color-base); 
     background-size: cover; 
     background-position: center; 
     color: white;
     align-content: center;
-    padding-top: 15vh;
 }
 
 .experience-row {
@@ -15,7 +14,8 @@
         align-content: center;
 
         .courses-dates h4 {
-            text-align: center;
+            text-align: left;
+            margin: 1rem 0;
         }
     }
 }
@@ -58,8 +58,6 @@
 
 @media (max-width: 768px) {
     .experience-section {
-        padding-top: 10vh;
-
         #title-section .var-color {
             font-size: 0.7em;
         }
@@ -67,6 +65,12 @@
 
     .experience-row {
         padding: 0 2em;
+
+        .experience-col {
+            .courses-dates h4 {
+                text-align: center;
+            }
+        }
     }
 
     .experience-description {
@@ -83,8 +87,6 @@
 
 @media (max-width: 576px) {
     .experience-section {
-        padding-top: 8vh;
-
         #title-section .var-color {
             font-size: 0.5em;
         }
@@ -93,13 +95,12 @@
     .experience-row {
         padding: 0 1em;
 
-        .courses-dates {
-            padding-bottom: 1em;
-
-            h4 {
+        .experience-col {
+            .courses-dates h4 {
+                padding-bottom: 1em;
                 font-size: 14px;
+                text-align: center;
             }
-
         }
     }
 

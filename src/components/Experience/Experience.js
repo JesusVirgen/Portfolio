@@ -12,13 +12,13 @@ function Experience() {
           <strong className="var-color">Experienca laboral</strong>
         </h1>
         <Row className='experience-row'>
-          <Col md={3} className="experience-col">
+          <Col md={4} className="experience-col">
             <div className="courses-dates">
               <h4><GiGraduateCap />Dirección de sistemas Universidad de Colima</h4>
               <h4><IoTime />2023</h4>
             </div>
           </Col>
-          <Col md={9} className="experience-col">
+          <Col md={8} className="experience-col">
             <div className="experience-description">
               <h3>Aprendiz Desarrollador Web.</h3>
               <span>Diseño y elaboración de una página web que consiste en una lista de
@@ -36,13 +36,13 @@ function Experience() {
         </Row>
         <div className="separator"></div>
         <Row className='experience-row'>
-          <Col md={3} className="experience-col">
+          <Col md={4} className="experience-col">
             <div className="courses-dates">
               <h4><GiGraduateCap />Colegio Campoverde</h4>
               <h4><IoTime />2024</h4>
             </div>
           </Col>
-          <Col md={9} className="experience-col">
+          <Col md={8} className="experience-col">
             <div className="experience-description">
               <h3>Desarrollador Backend.</h3>
               <span>Migración de la página web Campoverde a móvil. Creación de APIs
@@ -54,13 +54,13 @@ function Experience() {
         </Row>
         <div className="separator"></div>
         <Row className='experience-row'>
-          <Col md={3} className="experience-col">
+          <Col md={4} className="experience-col">
             <div className="courses-dates">
               <h4><GiGraduateCap />Proyecto JAPCOL</h4>
               <h4><IoTime />2023</h4>
             </div>
           </Col>
-          <Col md={9} className="experience-col">
+          <Col md={8} className="experience-col">
             <div className="experience-description">
               <h3>Desarrollador Fullstack.</h3>
               <span>Creación de formularios, insertando datos en base de datos y creando
@@ -71,13 +71,13 @@ function Experience() {
         </Row>
         <div className="separator"></div>
         <Row className='experience-row'>
-          <Col md={3} className="experience-col">
+          <Col md={4} className="experience-col">
             <div className="courses-dates">
               <h4><GiGraduateCap />Freelance</h4>
               <h4><IoTime />2024</h4>
             </div>
           </Col>
-          <Col md={9} className="experience-col">
+          <Col md={8} className="experience-col">
             <div className="experience-description">
               <h3>Desarrollador Fullstack.</h3>
               <span>Trabajé de manera independiente como programador freelance,

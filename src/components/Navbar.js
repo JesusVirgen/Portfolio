@@ -13,7 +13,7 @@ import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { GoProjectRoadmap } from "react-icons/go";
 import { PiFlyingSaucerBold } from "react-icons/pi";
-import logo from "../Assets/portfolio.png"; 
+import logo from "../Assets/j-image.png"; 
 
 
 function NavBar() {
@@ -40,7 +40,6 @@ function NavBar() {
     <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
         <Container>
             <Navbar.Brand className="d-flex">
-                <span id="navbar-text">Mi Portafolio</span>
                 <img src={logo} alt="Logo" className="navbar-logo" />
             </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => updateExpanded(expand ? false : "expanded")}>

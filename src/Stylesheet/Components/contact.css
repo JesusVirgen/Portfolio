@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: var(--image-gradient), url(../../Assets/contac.img.jpg); 
+    background-color: var(--bg-color-base); 
     background-size: cover; 
     background-position: center; 
 }
@@ -17,10 +17,53 @@
     }
 }
 
+.social-icons {
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    transition: transform 0.5s ease;
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+}
+
+.icon-colour {
+    svg {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+.social-media:nth-child(1) {
+    svg {
+        color: white;
+    }
+}
+
+.social-media:nth-child(2) {
+    svg {
+        color: white;
+    }
+}
+
+.social-media:nth-child(3) {
+    svg {
+        color: #0A66C2;
+    }
+}
+
+.social-media:nth-child(4) {
+    svg {
+        border-radius: 20%;
+        color: white;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    }
+}
+
 @media (max-width: 992px) {
     .resume-section {
-        padding-top: 14vh;
-
         #title-section .var-color {
             font-size: 0.7em;
         }
@@ -29,8 +72,6 @@
 
 @media (max-width: 768px) {
     .resume-section {
-        padding-top: 12vh;
-
         #title-section .var-color {
             font-size: 0.7em;
         }
@@ -48,8 +89,6 @@
 
 @media (max-width: 576px) {
     .resume-section {
-        padding-top: 10vh;
-
         #title-section .var-color {
             font-size: 0.5em;
         }

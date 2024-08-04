@@ -2,6 +2,7 @@ import React from "react";
 import { ImHeadphones } from "react-icons/im";
 import { PiSoccerBallFill } from "react-icons/pi";
 import { FaGuitar } from "react-icons/fa";
+import { MdComputer } from "react-icons/md";
 
 function AboutCard() {
   return (
@@ -18,10 +19,11 @@ function AboutCard() {
       <h1 id="title-section">
         <strong className="var-color">Mis pasatiempos favoritos</strong>
       </h1>
-      <ul className="about-activities">
-        <li className="about-activity"><ImHeadphones /> Escuchar musica </li>
+      <ul id="hobbies" className="about-activities">
+        <li  className="about-activity"><ImHeadphones /> Escuchar música </li>
         <li className="about-activity"><FaGuitar /> Tocar el ukelele </li>
-        <li className="about-activity"><PiSoccerBallFill /> Ver el futbol </li>
+        <li className="about-activity"><PiSoccerBallFill /> Ver el fútbol </li>
+        <li className="about-activity"><MdComputer /> Aprender nuevas tecnologías </li>
       </ul>
     </div>
   );

@@ -1,5 +1,8 @@
+@import url('https://fonts.cdnfonts.com/css/murray-corn');
+
 #home {
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 10em;
 }
 
 .wave {
@@ -37,36 +40,24 @@
     }
 }
 
-.home-header {
-    text-align: center;
-    padding-top: 80px;
-}
-
-#text-transiction {
-    margin-top: 100px;
-    text-align: center;
-}
-
 .home-section {
     min-height: 100vh;
-    background-image: var(--image-gradient), url(../../Assets/code-img.jpg); 
-    background-size: cover; 
-    background-position: center; 
+    background-color: var(--bg-color-base); 
 }
 
 .home-content {
-    padding: 13rem 0 2rem;
+    padding: 20rem 0 2rem;
     color: whitesmoke;
     text-align: left;
 }
 
 .heading {
-    font-size: 5em;
+    font-size: 3em;
     padding-bottom: 50px;
 }
 
 .heading-name {
-    font-size: 5em;
+    font-size: 3em;
     padding-bottom: 80px;
 }
 
@@ -75,20 +66,17 @@
 }
 
 .Typewriter__wrapper {
-    font-size: 4em;
+    font-size: 2em;
     color: #1c8b9e;
     font-weight: 600;
 }
 
 .Typewriter__cursor {
-    font-size: 4em;
+    font-size: 2em;
     color: #1c8b9e;
 }
 
-.myAvtar {
-    justify-content: center;
-    padding-top: 9em;
-}
+
 
 .home-about-description {
     padding-top: 100px;
@@ -96,47 +84,37 @@
 
 .img-fluid {
     cursor: pointer;
-    border-radius: 50%; 
-    box-shadow: 0 0 150px rgba(88, 244, 255, 0.897); 
+    border-radius: 40%; 
+    box-shadow: 0 0 150px rgba(88, 244, 255, 0.5); 
     transition: transform 0.5s ease;
+    width: 20em;
+    height: 20em;
 }
 
 .img-fluid:hover {
     transform: scale(1.1);
 }
 
-.social-icons {
-    display: inline-block;
-    padding-right: 30px;
-    padding-left: 30px;
-    transition: transform 0.5s ease;
-}
-
-.social-icons:hover {
-    transform: scale(1.5);
-}
-
-.icon-colour {
-    svg {
-        height: 50px;
-        width: 50px;
-        color: #001c97;
-    }
-}
 
 .about-activities{
-    padding: 2em 0 8em 0;
+    padding: 3em 5em 8em 5em;
 }
 
 .about-activity {
     display: flex;
     list-style: none;
-    font-size: 30px;
-    font-weight: 800;
+    font-family: 'Murray Corn', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
     color: rgb(207, 207, 207);
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.925);
     transition: transform 0.5s ease;
     cursor: pointer;
+    margin: 1rem 0;
+
+    svg {
+        margin-left: 16px;
+        height: auto;
+    }
 }
 
 .about-activity:hover {
@@ -147,45 +125,66 @@
 .about-activity:nth-child(1) {
     justify-content: flex-end;
     padding-right: 3em;
+    color: var(--bg-color-python);
+
+    svg {
+        color: var(--bg-color-python-svg)
+    }
 }
 
 .about-activity:nth-child(2) {
     justify-content: center; 
+    color: var(--bg-color-ruby)
 }
 
 .about-activity:nth-child(3) {
     justify-content: flex-start;
     padding-left: 5em;
+    color: var(--bg-color-mysql);
+
+    .sql-text {
+        color: #f29111;
+    }
+
+    svg {
+        color: var(--bg-color-mysql);
+    }
 }
 
 .about-activity:nth-child(4) {
     justify-content: flex-end;
-    padding-right: 4em;
+    padding-right: 14em;
+    color: var(--bg-color-javascript);
 }
 
 .about-activity:nth-child(5) {
     justify-content: center;
     padding-left: 2em;
+    color: var(--bg-color-react);
 }
 
 .about-activity:nth-child(6) {
     justify-content: flex-end;
     padding-right: 2em;
+    color: var(--bg-color-html)
 }
 
 .about-activity:nth-child(7) {
     justify-content: flex-start;
-    padding-left: 11em;
+    padding-left: 15em;
+    color: var(--bg-color-css)
 }
 
 .about-activity:nth-child(8) {
     justify-content: center;
     padding-right: 4em;
+    color: var(--bg-color-tailwindcss);
 }
 
 .about-activity:nth-child(9) {
     justify-content: flex-start;
     padding-left: 4em;
+    color: var(--bg-color-git);
 }
 
 .about-activity:nth-child(10) {
@@ -310,6 +309,7 @@
 @media (max-width: 576px) {
     .home-content {
         padding: 16em 0 2em 0;
+        text-align: center;
     }
 
     .heading {
@@ -321,12 +321,24 @@
         padding-bottom: 40px;
     }
 
-    .Typewriter__wrapper {
-        font-size: 1.5em;
+    .Typewriter {
+        display: flex;
+        justify-content: center;
+
+        .Typewriter__wrapper {
+            font-size: 1.5em;
+            position: fixed;
+            display: flex;
+        }
     }
 
     .myAvtar {
         padding-top: 3em;
+
+        .img-fluid {
+            width: 35%;
+            margin: 2em;
+        }
     }
 
     .home-about-description {

@@ -2,9 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 15vh;
     min-height: 100vh;
-    background-image: var(--image-gradient), url(../../Assets/about-img.jpg); 
+    background-color: var(--bg-color-base); 
     background-size: cover; 
     background-position: center; 
     color: white;
@@ -51,6 +50,12 @@
 
 .courses-name {
     padding: 4em 0;
+}
+
+#hobbies {
+    svg {
+        margin-right: 16px;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -107,7 +112,7 @@
 
 @media (max-width: 768px) {
     .about-section {
-        padding-top: 10vh;
+        display: block;
     }
 
     .about-row {
@@ -147,10 +152,6 @@
 }
 
 @media (max-width: 576px) {
-    .about-section {
-        padding-top: 8vh;
-    }
-
     .about-row {
         padding: 0 1em;
         
