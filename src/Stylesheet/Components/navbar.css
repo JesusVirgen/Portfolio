@@ -104,24 +104,6 @@
   width: 100%;
 }
 
-.fork-btn {
-  font-size: 1.1em;
-  padding-top: 10px;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em;
-  background-color: #005f66;
-  width: 5rem;
-  height: 2.5rem;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.fork-btn-inner::after {
-  display: none;
-}
-
 .navbar-logo {
   height: 56px;
 }
@@ -141,10 +123,6 @@
     padding-right: 0.8rem;
     padding-left: 0.8rem;
   }
-  
-  .fork-btn {
-    font-size: 1em;
-  }
 }
 
 @media (max-width: 992px) {
@@ -163,10 +141,6 @@
       padding-left: 0.6rem;
     }
   }
-  
-  .fork-btn {
-    font-size: 0.9em;
-  }
 }
 
 @media (max-width: 768px) {
@@ -178,10 +152,6 @@
   .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
-  }
-  
-  .fork-btn {
-    font-size: 0.8em;
   }
 
   .navbar-logo {
@@ -202,10 +172,6 @@
   .navbar-nav .nav-link {
     padding-right: 0.4rem;
     padding-left: 0.4rem;
-  }
-  
-  .fork-btn {
-    font-size: 0.7em;
   }
   
   .navbar-toggler span {

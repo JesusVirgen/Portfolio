@@ -32,7 +32,7 @@ return (
                         </a>
                     </li>
                     <li className="social-icons social-media">
-                        <a href="https://x.com/Jesus_Virgen_C" target="_blank" rel="noreferrer" className="icon-colour">
+                        <a href="https://x.com/Jesus_Virgen_" target="_blank" rel="noreferrer" className="icon-colour">
                             <BsTwitterX />
                         </a>
                     </li>

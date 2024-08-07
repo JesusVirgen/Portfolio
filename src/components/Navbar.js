@@ -2,13 +2,10 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import Button from "react-bootstrap/Button";
 import {
-  AiFillStar,
   AiOutlineContacts
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import { MdOutlineHomeWork } from "react-icons/md";
 import { GrUserManager } from "react-icons/gr";
 import { GoProjectRoadmap } from "react-icons/go";
@@ -77,13 +74,6 @@ function NavBar() {
                         <Nav.Link as={Link} to="/contact" onClick={()=> updateExpanded(false)} >
                             <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contacto
                         </Nav.Link>
-                    </Nav.Item>
-
-                    <Nav.Item className="fork-btn">
-                        <Button href="https://github.com/JesusVirgen/Portfolio" target="_blank" className="fork-btn-inner">
-                            <CgGitFork style={{ fontSize: "1.2em" }} />
-                            <AiFillStar style={{ fontSize: "1.1em" }} />
-                        </Button>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

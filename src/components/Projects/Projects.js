@@ -12,7 +12,7 @@ function Projects() {
       <Container>
         <ScrollAnimation>
           <h1 id="title-section">
-            <strong className="var-color">Mis proyectos personales</strong>
+            <strong className="var-color">Proyectos</strong>
           </h1>
           <p style={{ color: "white" }}>
             Estos son algunos de los proyectos en los cuales eh trabajado.
