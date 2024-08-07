@@ -81,11 +81,10 @@ function Experience() {
             <div className="experience-description">
               <h3>Desarrollador Fullstack.</h3>
               <span>Trabajé de manera independiente como programador freelance,
-                colaborando con un senior en programación para la empresa de
-                Donorbox. Las actividades eran la solución de bugs en su sistema de
-                donaciones, tanto de front-end como de back-end, utilizando las
-                tecnologías de Ruby on Rails como lenguaje principal, HTML, CSS y
-                JavaScript.</span>
+                colaborando con un senior en programación. Las actividades eran la 
+                solución de bugs en su sistema de donaciones, tanto de front-end 
+                como de back-end, utilizando lastecnologías de Ruby on Rails como 
+                lenguaje principal, HTML, CSS y JavaScript.</span>
             </div>
           </Col>
         </Row>
