@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.1bf7da7a.css",
-    "main.js": "/Portfolio/static/js/main.57724f85.js",
+    "main.css": "/Portfolio/static/css/main.6258ac98.css",
+    "main.js": "/Portfolio/static/js/main.f6cbf1bf.js",
     "static/js/453.1407b060.chunk.js": "/Portfolio/static/js/453.1407b060.chunk.js",
     "static/media/j-image.png": "/Portfolio/static/media/j-image.87f55e55791adba8899b.png",
     "static/media/univer-logo.png": "/Portfolio/static/media/univer-logo.455cf5491bf38f5bb02d.png",
@@ -9,12 +9,12 @@
     "static/media/profile.jpeg": "/Portfolio/static/media/profile.7a70f05c049003c78426.jpeg",
     "static/media/pre.svg": "/Portfolio/static/media/pre.907030f149c6f5891a0f.svg",
     "index.html": "/Portfolio/index.html",
-    "main.1bf7da7a.css.map": "/Portfolio/static/css/main.1bf7da7a.css.map",
-    "main.57724f85.js.map": "/Portfolio/static/js/main.57724f85.js.map",
+    "main.6258ac98.css.map": "/Portfolio/static/css/main.6258ac98.css.map",
+    "main.f6cbf1bf.js.map": "/Portfolio/static/js/main.f6cbf1bf.js.map",
     "453.1407b060.chunk.js.map": "/Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1bf7da7a.css",
-    "static/js/main.57724f85.js"
+    "static/css/main.6258ac98.css",
+    "static/js/main.f6cbf1bf.js"
   ]
 }
