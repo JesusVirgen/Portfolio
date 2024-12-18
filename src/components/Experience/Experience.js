@@ -39,7 +39,7 @@ function Experience() {
           <Col md={4} className="experience-col">
             <div className="courses-dates">
               <h4><GiGraduateCap />Colegio Campoverde</h4>
-              <h4><IoTime />2024</h4>
+              <h4><IoTime />2023</h4>
             </div>
           </Col>
           <Col md={8} className="experience-col">
