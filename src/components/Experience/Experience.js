@@ -1,95 +1,130 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { GiGraduateCap } from "react-icons/gi";
-import { IoTime } from "react-icons/io5";
-import ScrollAnimation from '../ScrollText';
+import React, { useState } from 'react';
+import { Container } from "react-bootstrap";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import { GiGraduateCap } from 'react-icons/gi';
+import { FaLaptopCode, FaBriefcase } from 'react-icons/fa'
+import { FaRocket } from "react-icons/fa";;
+
+const allExperiences = [
+  {
+    date: "2019-2024",
+    icon: <GiGraduateCap />,
+    title: "Facultad de Ingeniería Mecánica y Eléctrica - Universidad de Colima",
+    subtitle: "Ingeniería en Computación Inteligente",
+    description: [ ],
+    iconBg: "#c8d98e"
+  },
+  {
+    date: "2022",
+    icon: <FaLaptopCode />,
+    title: "Dirección de sistemas - Universidad de Colima",
+    subtitle: "Aprendiz Desarrollador Web",
+    description: [
+      "Página de tareas con PHP, JavaScript, HTML, CSS y Bootstrap.",
+      "Sitio de intercambio de libros entre campus con base de datos MySQL."
+    ],
+    iconBg: "#9f9ec8"
+  },
+  {
+    date: "2023",
+    icon: <FaBriefcase />,
+    title: "Colegio Campoverde",
+    subtitle: "Desarrollador Backend",
+    description: [
+      "Migración de web a móvil.",
+      "Creación de APIs para actividades escolares usando C# y SQLServer."
+    ],
+    iconBg: "#009d4b"
+  },
+  {
+    date: "2023-2024",
+    icon: <FaLaptopCode />,
+    title: "Proyecto JAPCOL",
+    subtitle: "Desarrollador Fullstack",
+    description: [
+      "Formularios y vistas usando Ruby on Rails, TailwindCSS y PostgreSQL.",
+    ],
+    iconBg: "#01536c"
+  },
+  {
+    date: "2023-2024",
+    icon: <FaBriefcase />,
+    title: "Freelance",
+    subtitle: "Desarrollador Fullstack",
+    description: [
+      "Resolución de bugs en sistema de donaciones.",
+      "Rails, HTML, CSS y JS en colaboración con desarrollador senior."
+    ],
+    iconBg: "#1c8b9e"
+  }
+];
 
 function Experience() {
+  const [visibleCount, setVisibleCount] = useState(2); 
+
+  const handleLoadMore = () => {
+    setVisibleCount((prev) => prev + 2);
+  };
+
   return (
-    <Container fluid className="experience-section">
-      <ScrollAnimation>
-        <h1 id="title-section">
-          <strong className="var-color">Experienca laboral</strong>
-        </h1>
-        <Row className='experience-row'>
-          <Col md={4} className="experience-col">
-            <div className="courses-dates">
-              <h4><GiGraduateCap />Dirección de sistemas Universidad de Colima</h4>
-              <h4><IoTime />2023</h4>
+    <section id="experience">
+      <Container fluid className="experience-content">
+        <Container className="experience-section">
+          <VerticalTimeline>
+            <VerticalTimelineElement
+              iconStyle={{ background: "#9ca3af", color: "#fff" }}
+              icon={<FaRocket />}
+              contentStyle={{ display: "none" }}
+              contentArrowStyle={{ display: "none" }}
+              className="vertical-timeline-icon-start"
+            />
+
+            {allExperiences.slice(0, visibleCount).map((exp, index) => (
+              <VerticalTimelineElement
+                key={index}
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#bdbdbd', color: '#000' }}
+                contentArrowStyle={{ borderRight: '7px solid #bdbdbd' }}
+                date={exp.date}
+                iconStyle={{ background: exp.iconBg, color: '#000' }}
+                icon={exp.icon}
+              >
+                <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+                <h4 className="vertical-timeline-element-subtitle">{exp.subtitle}</h4>
+                <ul>
+                  {exp.description.map((d, i) => (
+                    <li key={i}>{d}</li>
+                  ))}
+                </ul>
+              </VerticalTimelineElement>
+            ))}
+          </VerticalTimeline>
+
+          {visibleCount < allExperiences.length && (
+            <div style={{ textAlign: 'center', marginTop: '20px' }}>
+              <button
+                onClick={handleLoadMore}
+                style={{
+                  backgroundColor: '#1c8b9e',
+                  color: 'white',
+                  padding: '10px 20px',
+                  border: 'none',
+                  borderRadius: '8px',
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                }}
+              >
+                Ver más
+              </button>
             </div>
-          </Col>
-          <Col md={8} className="experience-col">
-            <div className="experience-description">
-              <h3>Aprendiz Desarrollador Web.</h3>
-              <span>Diseño y elaboración de una página web que consiste en una lista de
-                tareas, aplicando conocimientos de Frontend y Backend con los
-                lenguajes de programación PHP, JavaScript, HTML, CSS y la librería de
-                Boostrap.</span>
-              <br />
-              <span>Diseño y Elaboración de un sitio web para la Universidad de Colima que
-                consiste principalmente en intercambio de libros en las diferentes
-                librerías de cada campus de la universidad, utilizando conocimientos de
-                Frontend y Backend utilizando las tecnologías PHP, JavaScript, HTML,
-                CSS y Boostrap, además de utilizar base de datos MySQL.</span>
-            </div>
-          </Col>
-        </Row>
-        <div className="separator"></div>
-        <Row className='experience-row'>
-          <Col md={4} className="experience-col">
-            <div className="courses-dates">
-              <h4><GiGraduateCap />Colegio Campoverde</h4>
-              <h4><IoTime />2023</h4>
-            </div>
-          </Col>
-          <Col md={8} className="experience-col">
-            <div className="experience-description">
-              <h3>Desarrollador Backend.</h3>
-              <span>Migración de la página web Campoverde a móvil. Creación de APIs
-                para las diferentes actividades del colegio tanto para maestros como
-                coordinadores, mediante el uso de la base de datos SQLServer y el
-                lenguaje de programación C# y .NET.</span>
-            </div>
-          </Col>
-        </Row>
-        <div className="separator"></div>
-        <Row className='experience-row'>
-          <Col md={4} className="experience-col">
-            <div className="courses-dates">
-              <h4><GiGraduateCap />Proyecto JAPCOL</h4>
-              <h4><IoTime />2023</h4>
-            </div>
-          </Col>
-          <Col md={8} className="experience-col">
-            <div className="experience-description">
-              <h3>Desarrollador Fullstack.</h3>
-              <span>Creación de formularios, insertando datos en base de datos y creando
-                vistas para formularios, utilizando el lenguaje de Ruby on Rails y
-                TailwindCSS.</span>
-            </div>
-          </Col>
-        </Row>
-        <div className="separator"></div>
-        <Row className='experience-row'>
-          <Col md={4} className="experience-col">
-            <div className="courses-dates">
-              <h4><GiGraduateCap />Freelance</h4>
-              <h4><IoTime />2024</h4>
-            </div>
-          </Col>
-          <Col md={8} className="experience-col">
-            <div className="experience-description">
-              <h3>Desarrollador Fullstack.</h3>
-              <span>Trabajé de manera independiente como programador freelance,
-                colaborando con un senior en programación. Las actividades eran la 
-                solución de bugs en su sistema de donaciones, tanto de front-end 
-                como de back-end, utilizando lastecnologías de Ruby on Rails como 
-                lenguaje principal, HTML, CSS y JavaScript.</span>
-            </div>
-          </Col>
-        </Row>
-      </ScrollAnimation>
-    </Container>
+          )}
+        </Container>
+      </Container>
+    </section>
   );
 }
 

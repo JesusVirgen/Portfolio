@@ -1,21 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/san-andreas');
 @import url('https://fonts.cdnfonts.com/css/ep-dominate');
 @import "Components/components";
 
-h1 {
-    font-family: 'SAN ANDREAS', sans-serif;
-}
-
-h3, h4, p, span {
+* {
     font-family: 'EP Dominate', sans-serif;
+    letter-spacing: 2px;
 }
-  
-.var-color {
-    color: var(--imp-text-color);
-    font-weight: 400;
-    font-family: 'SAN ANDREAS', sans-serif;
-}
-
 
 #title-section {
     font-size: var(--space-base);
@@ -25,13 +14,6 @@ button:focus {
     box-shadow: none;
 }
 
-.scroll-animation-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
-}
-
-.scroll-animation-section.visible {
-    opacity: 1;
-    transform: translateY(0);
+.container {
+    max-width: 80% !important;
 }

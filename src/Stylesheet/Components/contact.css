@@ -1,20 +1,56 @@
-.resume-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--bg-color-base); 
-    background-size: cover; 
-    background-position: center; 
+.footer {
+    background-color: var(--bg-color-base);
+    bottom: 0;
+    padding: 45px 45px 0 45px;
+
+    .footer-col {
+        margin-bottom: 20px;
+
+        .img-j {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
 }
 
-.resume-description {
-    padding: 3em 0 2em 0;
+.footer-row {
+    flex-direction: column;
+}
 
-    span {
-    font-size: 30px;
-    color: white;
+.footer-icons {
+    margin-bottom: 45px;
+
+    .social-icons {
+        svg {
+            width: 24px;
+            height: 24px;
+        }
     }
+}
+
+.footer p.follow-text {
+    margin-bottom: 30px;
+    color: grey;
+}
+
+.copyright-text {
+    color: white;
+    text-align: center;
+}
+
+.email-footer-text {
+    background: rgba(128, 128, 128, 0.301);
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+.footer .footer-copyright {
+    margin-top: 50px;
 }
 
 .social-icons {
@@ -28,81 +64,34 @@
     transform: scale(1.5);
 }
 
-.icon-colour {
-    svg {
-        height: 50px;
-        width: 50px;
-    }
-}
-
-.social-media:nth-child(1) {
-    svg {
-        color: white;
-    }
-}
-
-.social-media:nth-child(2) {
-    svg {
-        color: white;
-    }
-}
-
-.social-media:nth-child(3) {
-    svg {
-        color: #0A66C2;
-    }
-}
-
-.social-media:nth-child(4) {
-    svg {
-        border-radius: 20%;
-        color: white;
-        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-        background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-    }
-}
-
-@media (max-width: 992px) {
-    .resume-section {
-        #title-section .var-color {
-            font-size: 0.7em;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .resume-section {
-        #title-section .var-color {
-            font-size: 0.7em;
-        }
-
-        .resume-description span {
-            font-size: 18px;
-        }
-
-        ul li svg {
-            width: 35px;
-            height: 35px;
-       }
-    }
-}
-
 @media (max-width: 576px) {
-    .resume-section {
-        #title-section .var-color {
-            font-size: 0.5em;
+    .footer-row {
+        .footer-col {
+            .copyright-text {
+                font-size: 14px;
+            }
+
+            .img-j {
+                width: 4rem;
+                height: 4rem;
+            }
+
+            .footer-icons {
+                padding-left: 0;
+
+                .social-icons {
+                    padding: 4px 6px;
+
+                }
+            }
         }
 
-        .resume-description span {
+        .footer-copyright .copyright-text {
             font-size: 14px;
         }
 
-        ul {
-            padding-left: 0;
-            li svg {
-                width: 20px;
-                height: 20px;
-            }
+        .email-footer-text {
+            font-size: 12px;
         }
     }
 }

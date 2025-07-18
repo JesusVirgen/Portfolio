@@ -3,7 +3,8 @@ html {
     --image-gradient: linear-gradient(to bottom left,rgba(17, 16, 16, 0.863), rgba(12, 10, 22, 0.863));
     --image-gradient-light: linear-gradient(to bottom left,rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.795));
     --imp-text-color: #1c8b9e;
-    --bg-color-base: #04001a;
+    --bg-color-base: #2f2f2f;
+    --bg-color-secondary: #bdbdbd;
     --bg-color-mysql: #00758f;
     --bg-color-ruby: #cc0000;
     --bg-color-python: #646464;

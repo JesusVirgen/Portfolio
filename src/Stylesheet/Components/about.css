@@ -1,211 +1,76 @@
+#about {
+    background-color: black;
+}
+
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15vh;
     min-height: 100vh;
-    background-color: var(--bg-color-base); 
-    background-size: cover; 
-    background-position: center; 
-    color: white;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    height: 100vh;
+    color: whitesmoke;
+    text-align: left;
 }
 
 .about-row {
-    padding: 0 7em 0 7em;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
 }
 
 .about-description-text {
-    padding: 2em 4em 8em 4em;
+    padding: 0 4em;
     font-size: 23px;
     font-weight: 700;
-    text-align: center;
-    color: rgb(207, 207, 207);
-}
-
-.about-container {
-    padding: 2em 0 8em 0;
-}
-
-.study-date {
     text-align: left;
-    align-content: center;
-}
-
-.uni-name {
-    align-content: center;
-}
-
-.img-university {
-    width: 28em;
-    height: 13em;
-}
-
-.img-university:hover {
-    transform: scale(1.1);
-}
-
-.courses-dates {
-    padding: 4em 0;
-    text-align: left;
-}
-
-.courses-name {
-    padding: 4em 0;
-}
-
-#hobbies {
-    svg {
-        margin-right: 16px;
-    }
+    color: white;
 }
 
 @media (max-width: 1200px) {
-    .about-row {
-        padding: 0 5em;
-
-        #title-section .var-color {
-            font-size: 0.7em;
-        }
+    .swiper {
+        width: 190px;
+        height: 260px;
     }
 
     .about-description-text {
         font-size: 20px;
     }
+}
 
-    .img-university {
-        width: 24em;
-        height: 11em;
+@media (max-width: 1169px) {
+    .experience-section .vertical-timeline-element-date {
+        color: black;
     }
 }
 
 @media (max-width: 992px) {
-    .about-row {
-        padding: 0 3em;
-    }
-
     .about-description-text {
         font-size: 18px;
     }
-
-    .about-container {
-        .courses-dates h4, .study-date h4 {
-            font-size: 14px;
-        }
-
-        .uni-name h3 {
-            font-size: 18px;
-        }
-
-        .experience-col .courses-name h4 {
-            font-size: 18px;
-        }
-    }
-
-    .img-university {
-        width: 20em;
-        height: 9em;
-    }
-
-    .about-activities .about-activity {
-        margin: 1em 0;
-    }
 }
 
-@media (max-width: 768px) {
-    .about-section {
-        display: block;
-    }
-
-    .about-row {
-        padding: 0 2em;
-
-        #title-section .var-color {
-            font-size: 0.7em;
-        }
-    }
-
+@media (max-width: 767px) {
     .about-description-text {
         padding: 2em 2em 6em 2em;
         font-size: 20px;
+        margin-top: 60px;
+        text-align: center;
     }
 
-    .about-container {
-        padding: 2em 0 6em 0;
-
-        .courses-dates h4, .study-date h4 {
-            text-align: center;
-        }
-    }
-
-    .courses-dates,
-    .courses-name {
-        padding: 2em 0;
-    }
-
-    .img-university {
-        width: 18em;
-        height: 8em;
-    }
-
-    .about-activities .about-activity {
-        margin: 1em 0;
+    .about-cards {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
     }
 }
 
 @media (max-width: 576px) {
-    .about-row {
-        padding: 0 1em;
-        
-        #title-section .var-color {
-            font-size: 0.5em;
-        }
-    }
-
     .about-description-text {
         padding: 1em 1em 2em 1em;
         font-size: 18px;
-    }
-
-    .about-container {
-        padding: 1em 0 4em 0;
-
-        .courses-dates h4, .study-date h4 {
-            font-size: 14px;
-            text-align: center;
-        }
-
-        .uni-name h3 {
-            font-size: 18px;
-        }
-
-        .experience-col .courses-name h4 {
-            font-size: 18px;
-        }
-    }
-
-    .courses-dates,
-    .courses-name {
-        padding: 1em 0;
-    }
-
-    .img-university {
-        width: 15em;
-        height: 7em;
-    }
-
-    .about-activities {
-        margin: 2em 2em 4em 2em;
-
-        .about-activity {
-            margin: 1em 0;
-        }
-    }
-
-    .study-date {
-        margin-bottom: 1em;
-    }
-
-    .uni-name {
-        margin-bottom: 1em;
-    }     
+    }  
 }

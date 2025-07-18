@@ -1,22 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Tilt from "react-parallax-tilt";
-import Particle from "../Particle";
-import Home2 from "./Home2";
+import About from "../About/About";
+import Experience from "../Experience/Experience";
+import Projects from "../Projects/Projects";
 import Type from "./Works";
 import myImg from "../../Assets/profile.jpeg";
-import ScrollAnimation from '../ScrollText';
-
 
 function Home() {
     return (
-        <section>
-            <Container fluid className="home-section" id="home">
-                <Particle />
-                <Container className="home-content">
-                    <ScrollAnimation>
-                        <Row>
-                            <Col md={8}>
+        <div>
+            <section id="home">
+                <Container fluid className="home-section">
+                    <Container className="home-content">
+                        <Row className="home-row">
+                            <Col md={8} className="home-text">
                                 <h1 className="heading">
                                         ¡Hola! 
                                     <span className="wave" role="img" aria-labelledby="wave">
@@ -33,17 +30,17 @@ function Home() {
                                     <Type />
                                 </div>
                             </Col>
-                            <Col md={4} className="myAvtar">
-                                <Tilt>
-                                    <img src={myImg} className="img-fluid" alt="avatar" />
-                                </Tilt>
+                            <Col md={4} className="home-profile-img">
+                                <img src={myImg} className="img-fluid" alt="avatar" />
                             </Col>
                         </Row>
-                    </ScrollAnimation>
+                    </Container>
                 </Container>
-            </Container>
-            <Home2 />
-        </section>
+            </section>
+            <About />
+            <Experience />
+            <Projects />
+        </div>
     );
 }
 
