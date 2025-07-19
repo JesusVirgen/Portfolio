@@ -10,7 +10,7 @@ function Home() {
     return (
         <div>
             <section id="home">
-                <Container fluid className="home-section">
+                <div fluid className="home-section">
                     <Container className="home-content">
                         <Row className="home-row">
                             <Col md={8} className="home-text">
@@ -35,7 +35,7 @@ function Home() {
                             </Col>
                         </Row>
                     </Container>
-                </Container>
+                </div>
             </section>
             <About />
             <Experience />

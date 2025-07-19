@@ -25,7 +25,7 @@ import expressImg from "../../Assets/languages_img/expressjs.png";
 function About() {
     return (
         <section id="about">
-            <Container fluid className="about-section">
+            <div fluid className="about-section">
                 <Container className="about-content">
                     <Row className="about-row">
                         <Col md={4} className="about-cards">
@@ -41,21 +41,21 @@ function About() {
                                     modules={[EffectCards, Autoplay]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide><img src={pythonImg} alt="Python image" /></SwiperSlide>
-                                    <SwiperSlide><img src={rubyImg} alt="Ruby image" /></SwiperSlide>
-                                    <SwiperSlide><img src={railsImg} alt="Rails image" /></SwiperSlide>
-                                    <SwiperSlide><img src={expressImg} alt="Express JS image" /></SwiperSlide>
-                                    <SwiperSlide><img src={javascriptImg} alt="JavaScript image" /></SwiperSlide>
-                                    <SwiperSlide><img src={nodeImg} alt="Node.js image" /></SwiperSlide>
-                                    <SwiperSlide><img src={reactImg} alt="React image" /></SwiperSlide>
-                                    <SwiperSlide><img src={mysqlImg} alt="MySQL image" /></SwiperSlide>
-                                    <SwiperSlide><img src={htmlImg} alt="HTML image" /></SwiperSlide>
-                                    <SwiperSlide><img src={cssImg} alt="CSS image" /></SwiperSlide>
-                                    <SwiperSlide><img src={tailwindcssImg} alt="TailwindCSS image" /></SwiperSlide>
-                                    <SwiperSlide><img src={bootstrapImg} alt="Bootstrap image" /></SwiperSlide>
-                                    <SwiperSlide><img src={gitImg} alt="Git image" /></SwiperSlide>
-                                    <SwiperSlide><img src={wordpessImg} alt="WordPress image" /></SwiperSlide>
-                                    <SwiperSlide><img src={ubuntuImg} alt="Ubuntu image" /></SwiperSlide>
+                                    <SwiperSlide><img src={pythonImg} alt="Python" /></SwiperSlide>
+                                    <SwiperSlide><img src={rubyImg} alt="Ruby" /></SwiperSlide>
+                                    <SwiperSlide><img src={railsImg} alt="Rails" /></SwiperSlide>
+                                    <SwiperSlide><img src={expressImg} alt="Express JS" /></SwiperSlide>
+                                    <SwiperSlide><img src={javascriptImg} alt="JavaScript" /></SwiperSlide>
+                                    <SwiperSlide><img src={nodeImg} alt="Node.js" /></SwiperSlide>
+                                    <SwiperSlide><img src={reactImg} alt="React" /></SwiperSlide>
+                                    <SwiperSlide><img src={mysqlImg} alt="MySQL" /></SwiperSlide>
+                                    <SwiperSlide><img src={htmlImg} alt="HTML" /></SwiperSlide>
+                                    <SwiperSlide><img src={cssImg} alt="CSS" /></SwiperSlide>
+                                    <SwiperSlide><img src={tailwindcssImg} alt="TailwindCSS" /></SwiperSlide>
+                                    <SwiperSlide><img src={bootstrapImg} alt="Bootstrap" /></SwiperSlide>
+                                    <SwiperSlide><img src={gitImg} alt="Git" /></SwiperSlide>
+                                    <SwiperSlide><img src={wordpessImg} alt="WordPress" /></SwiperSlide>
+                                    <SwiperSlide><img src={ubuntuImg} alt="Ubuntu" /></SwiperSlide>
                                 </Swiper>
                             </>
                         </Col>
@@ -68,7 +68,7 @@ function About() {
                         </Col>
                     </Row>
                 </Container>
-            </Container>
+            </div>
         </section>
     );
 }

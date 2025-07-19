@@ -11,7 +11,7 @@ export default function Carroussel(props) {
     const [showArrows, setShowArrows] = useState(false);
     const [cards] = useState(table);
     const [goToSlide, setGoToSlide] = useState(props.activeCard);
-    const [isPaused, setIsPaused] = useState(false);
+    const [setIsPaused] = useState(false);
     const activeCardRef = useRef(props.activeCard);
 
     useEffect(() => {
@@ -47,7 +47,6 @@ export default function Carroussel(props) {
                 width: props.width,
                 height: props.height,
                 margin: props.margin,
-                height: props.height
             }}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

@@ -13,7 +13,3 @@
 button:focus {
     box-shadow: none;
 }
-
-.container {
-    max-width: 80% !important;
-}

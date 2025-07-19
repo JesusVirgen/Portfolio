@@ -52,6 +52,10 @@
     text-align: left;
 }
 
+.home-content.container {
+    max-width: 90%;
+}
+
 .heading {
     font-size: 35px;
     padding-bottom: 25px;
@@ -64,18 +68,18 @@
 }
 
 .main-name {
-    color: #1c8b9e;
+    color: var(--imp-text-color);
 }
 
 .Typewriter__wrapper {
     font-size: 35px;
-    color: #1c8b9e;
+    color: var(--imp-text-color);
     font-weight: 500;
 }
 
 .Typewriter__cursor {
     font-size: 35px;
-    color: #1c8b9e;
+    color: var(--imp-text-color);
     position: relative;
     right: 20px;
     bottom: 3px;
@@ -104,6 +108,7 @@
 }
 
 .swiper-slide {
+    width: fit-content !important;
     display: flex;
     align-items: center;
     justify-content: center;

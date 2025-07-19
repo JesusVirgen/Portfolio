@@ -12,7 +12,15 @@
     text-align: left;
 }
 
+.experience-section.container {
+    max-width: 90%;
+}
+
 .vertical-timeline-element-title {
+    margin-bottom: 10px;
+}
+
+.vertical-timeline-element-subtitle {
     margin-bottom: 10px;
 }
 
@@ -30,4 +38,26 @@
     padding-left: 40px;
     max-width: 800px;
     margin: auto;
+}
+
+@media (max-width: 576px) {
+    .vertical-timeline {
+        width: 100%;
+    }
+
+    .vertical-timeline-element-content {
+        padding: 20px 10px;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 18px;
+    }
+
+    .vertical-timeline-element-subtitle {
+        font-size: 16px;
+    }
+
+    .vertical-timeline-element-content ul li {
+        font-size: 12px;
+    }
 }

@@ -72,7 +72,7 @@ function Experience() {
 
   return (
     <section id="experience">
-      <Container fluid className="experience-content">
+      <div fluid className="experience-content">
         <Container className="experience-section">
           <VerticalTimeline>
             <VerticalTimelineElement
@@ -123,7 +123,7 @@ function Experience() {
             </div>
           )}
         </Container>
-      </Container>
+      </div>
     </section>
   );
 }

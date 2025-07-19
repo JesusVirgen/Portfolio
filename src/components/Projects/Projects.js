@@ -100,7 +100,7 @@ function Projects() {
 
   return (
     <section id="projects">
-      <Container fluid className="project-section">
+      <div fluid className="project-section">
         <Container className="project-content"> 
           <Carousel
             className="custom-carousel"
@@ -114,7 +114,7 @@ function Projects() {
             slides={cards}
           />
         </Container>
-      </Container>
+      </div>
     </section>
   );
 }

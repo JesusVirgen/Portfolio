@@ -26,7 +26,7 @@ function Card({ imagen, titulo, descripcion, src}) {
             <h3>{titulo}</h3>
             <p>{descripcion}</p>
             <div className="btnn">
-                <Button src={src} text="Code" />
+                <Button src={src} text="Código" />
             </div>
         </animated.div>
     );
