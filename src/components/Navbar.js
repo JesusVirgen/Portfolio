@@ -21,7 +21,7 @@ function NavBar() {
 
     return (
         <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
-            <Container>
+            <Container className="navbar-content">
                 <Navbar.Brand className="d-flex">
                     <img src={logo} alt="Logo" className="navbar-logo" />
                 </Navbar.Brand>

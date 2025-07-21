@@ -11,8 +11,10 @@ export default function Carroussel(props) {
     const [showArrows, setShowArrows] = useState(false);
     const [cards] = useState(table);
     const [goToSlide, setGoToSlide] = useState(props.activeCard);
-    const [setIsPaused] = useState(false);
+    const [isPaused, setIsPaused] = useState(false); 
     const activeCardRef = useRef(props.activeCard);
+
+    const intervalRef = useRef(null); 
 
     useEffect(() => {
         setOffsetRadius(props.offset);
@@ -23,23 +25,24 @@ export default function Carroussel(props) {
         activeCardRef.current = props.activeCard;
     }, [props.activeCard]);
 
-    // Touch events for mobile
-    const handleTouchStart = (event) => {
-        setIsPaused(true);
-    };
+    useEffect(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current); 
 
-    const handleTouchEnd = () => {
-        setIsPaused(false);
-    };
+        intervalRef.current = setInterval(() => {
+            if (!isPaused) {
+                setGoToSlide(prev =>
+                    prev === cards.length - 1 ? 0 : prev + 1
+                );
+            }
+        }, 10000); 
 
-    // Mouse events for desktop
-    const handleMouseEnter = () => {
-        setIsPaused(true);
-    };
+        return () => clearInterval(intervalRef.current); 
+    }, [isPaused, cards.length]);
 
-    const handleMouseLeave = () => {
-        setIsPaused(false);
-    };
+    const handleTouchStart = () => setIsPaused(true);
+    const handleTouchEnd = () => setIsPaused(false);
+    const handleMouseEnter = () => setIsPaused(true);
+    const handleMouseLeave = () => setIsPaused(false);
 
     return (
         <div
@@ -52,7 +55,7 @@ export default function Carroussel(props) {
             onMouseLeave={handleMouseLeave}
             onTouchStart={handleTouchStart}
             onTouchEnd={handleTouchEnd}
-            onClick={() => setIsPaused(true)} 
+            onClick={() => setIsPaused(true)}
         >
             <Carousel
                 slides={cards}
@@ -63,4 +66,4 @@ export default function Carroussel(props) {
             />
         </div>
     );
-} 
+}
