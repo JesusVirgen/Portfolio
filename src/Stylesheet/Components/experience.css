@@ -4,6 +4,7 @@
 
 .experience-content {
     min-height: 100vh;
+    position: relative;
 }
 
 .experience-section {
@@ -38,6 +39,30 @@
     padding-left: 40px;
     max-width: 800px;
     margin: auto;
+}
+
+.vertical-timeline::before {
+    background: var(--timeline-gradient);
+}
+
+.vertical-timeline-icon-start .vertical-timeline-element-icon,
+.vertical-timeline-icon-end .vertical-timeline-element-icon {
+    background: var(--sub-title-gradient);
+}
+
+.vertical-timeline-element--work .vertical-timeline-element-content {
+    background: var(--bg-navbar);
+    color: #ffff;
+    background:
+    linear-gradient(#0b0f1a, #0b0f1a) padding-box,
+    linear-gradient(135deg, #8b5cf6, #38bdf8, #22d3ee) border-box;
+    border: 2px solid transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgb(83, 249, 255);
 }
 
 @media (max-width: 576px) {

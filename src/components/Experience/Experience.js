@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container } from "react-bootstrap";
 import {
   VerticalTimeline,
@@ -6,8 +6,8 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { GiGraduateCap } from 'react-icons/gi';
-import { FaLaptopCode, FaBriefcase } from 'react-icons/fa'
-import { FaRocket } from "react-icons/fa";;
+import { FaLaptopCode, FaBriefcase, FaRocket, FaFlagCheckered } from 'react-icons/fa';
+
 
 const allExperiences = [
   {
@@ -15,8 +15,8 @@ const allExperiences = [
     icon: <GiGraduateCap />,
     title: "Facultad de Ingeniería Mecánica y Eléctrica - Universidad de Colima",
     subtitle: "Ingeniería en Computación Inteligente",
-    description: [ ],
-    iconBg: "#c8d98e"
+    description: [],
+    iconBg: "linear-gradient(138deg,rgba(240, 153, 255, 1) 0%, rgba(155, 166, 99, 1) 100%)"
   },
   {
     date: "2022",
@@ -24,10 +24,10 @@ const allExperiences = [
     title: "Dirección de sistemas - Universidad de Colima",
     subtitle: "Aprendiz Desarrollador Web",
     description: [
-      "Página de tareas con PHP, JavaScript, HTML, CSS y Bootstrap.",
-      "Sitio de intercambio de libros entre campus con base de datos MySQL."
+      "Sitio de intercambio de libros para la Universidad de Colima.",
+      "PHP, mySQL, HTML, CSS, Javascript, Boostrap, Git y Github."
     ],
-    iconBg: "#9f9ec8"
+    iconBg: "linear-gradient(90deg,rgba(131, 125, 255, 1) 0%, rgba(117, 228, 250, 1) 100%)"
   },
   {
     date: "2023",
@@ -35,10 +35,10 @@ const allExperiences = [
     title: "Colegio Campoverde",
     subtitle: "Desarrollador Backend",
     description: [
-      "Migración de web a móvil.",
-      "Creación de APIs para actividades escolares usando C# y SQLServer."
+      "Creación de APIs de las actividades escolares para su implementación dentro de la página.",
+      "C# ,SQLServer, Visual Studio 2012 y Postman."
     ],
-    iconBg: "#009d4b"
+    iconBg: "linear-gradient(90deg,rgba(38, 255, 92, 1) 0%, rgba(110, 190, 255, 1) 100%)"
   },
   {
     date: "2023-2024",
@@ -46,9 +46,10 @@ const allExperiences = [
     title: "Proyecto JAPCOL",
     subtitle: "Desarrollador Fullstack",
     description: [
-      "Formularios y vistas usando Ruby on Rails, TailwindCSS y PostgreSQL.",
+      "Creación de formularios, tabla de base de datos, modelos, controlladores y vistas.",
+      "Ruby on Rails, HTML, CSS, JavaScript, PostgresSQL, TailwindCSS."
     ],
-    iconBg: "#01536c"
+    iconBg: "linear-gradient(90deg,rgba(255, 110, 110, 1) 0%, rgba(255, 200, 122, 1) 100%)"
   },
   {
     date: "2023-2024",
@@ -56,39 +57,40 @@ const allExperiences = [
     title: "Freelance",
     subtitle: "Desarrollador Fullstack",
     description: [
-      "Resolución de bugs en sistema de donaciones.",
-      "Rails, HTML, CSS y JS en colaboración con desarrollador senior."
+      "Resolución de bugs en sistema de donaciones en colaboración con un desarrollador web senior.",
+      "Ruby on Rails, HTML, CSS, JavaScript, JQuery, PostgresSQL, Stripe y Paypal."
     ],
-    iconBg: "#1c8b9e"
+    iconBg: "linear-gradient(90deg,rgba(186, 255, 233, 1) 0%, rgba(255, 125, 125, 1) 100%)"
+  },
+  {
+    date: "2025-Act",
+    icon: <FaBriefcase />,
+    title: "Tecnovaxion",
+    subtitle: "Desarrollador Fullstack / DevOps",
+    description: [
+      "Desarollé una página de venta de servicios legales junto a un equipo de desarrolladores.",
+      "Node.js, Express, HTML, CSS y JavaScript, Bootstrap, iPgae, Heroku y Stripe."
+    ],
+    iconBg: "linear-gradient(313deg,rgba(97, 229, 255, 1) 0%, rgba(255, 253, 145, 1) 100%)"
   }
 ];
 
 function Experience() {
-  const [visibleCount, setVisibleCount] = useState(2); 
-
-  const handleLoadMore = () => {
-    setVisibleCount((prev) => prev + 2);
-  };
-
   return (
     <section id="experience">
-      <div fluid className="experience-content">
+      <div className="experience-content">
         <Container className="experience-section">
           <VerticalTimeline>
             <VerticalTimelineElement
-              iconStyle={{ background: "#9ca3af", color: "#fff" }}
               icon={<FaRocket />}
               contentStyle={{ display: "none" }}
-              contentArrowStyle={{ display: "none" }}
               className="vertical-timeline-icon-start"
             />
 
-            {allExperiences.slice(0, visibleCount).map((exp, index) => (
+            {allExperiences.map((exp, index) => (
               <VerticalTimelineElement
                 key={index}
                 className="vertical-timeline-element--work"
-                contentStyle={{ background: '#bdbdbd', color: '#000' }}
-                contentArrowStyle={{ borderRight: '7px solid #bdbdbd' }}
                 date={exp.date}
                 iconStyle={{ background: exp.iconBg, color: '#000' }}
                 icon={exp.icon}
@@ -102,26 +104,12 @@ function Experience() {
                 </ul>
               </VerticalTimelineElement>
             ))}
+            <VerticalTimelineElement
+              icon={<FaFlagCheckered />}
+              contentStyle={{ display: "none" }}
+              className="vertical-timeline-icon-end"
+            />
           </VerticalTimeline>
-
-          {visibleCount < allExperiences.length && (
-            <div style={{ textAlign: 'center', marginTop: '20px' }}>
-              <button
-                onClick={handleLoadMore}
-                style={{
-                  backgroundColor: '#1c8b9e',
-                  color: 'white',
-                  padding: '10px 20px',
-                  border: 'none',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  fontWeight: 'bold',
-                }}
-              >
-                Ver más
-              </button>
-            </div>
-          )}
         </Container>
       </div>
     </section>

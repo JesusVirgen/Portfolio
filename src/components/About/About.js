@@ -21,6 +21,8 @@ import bootstrapImg from "../../Assets/languages_img/bootstrap.png";
 import wordpessImg from "../../Assets/languages_img/wordpress.png";
 import ubuntuImg from "../../Assets/languages_img/ubuntu.png";
 import expressImg from "../../Assets/languages_img/expressjs.png";
+import herokuImg from "../../Assets/languages_img/heroku.svg";
+import vscodeImg from "../../Assets/languages_img/vscode.svg";
 
 function About() {
     return (
@@ -41,12 +43,12 @@ function About() {
                                     modules={[EffectCards, Autoplay]}
                                     className="mySwiper"
                                 >
+                                    <SwiperSlide><img src={nodeImg} alt="Node.js" /></SwiperSlide>
                                     <SwiperSlide><img src={pythonImg} alt="Python" /></SwiperSlide>
                                     <SwiperSlide><img src={rubyImg} alt="Ruby" /></SwiperSlide>
                                     <SwiperSlide><img src={railsImg} alt="Rails" /></SwiperSlide>
                                     <SwiperSlide><img src={expressImg} alt="Express JS" /></SwiperSlide>
                                     <SwiperSlide><img src={javascriptImg} alt="JavaScript" /></SwiperSlide>
-                                    <SwiperSlide><img src={nodeImg} alt="Node.js" /></SwiperSlide>
                                     <SwiperSlide><img src={reactImg} alt="React" /></SwiperSlide>
                                     <SwiperSlide><img src={mysqlImg} alt="MySQL" /></SwiperSlide>
                                     <SwiperSlide><img src={htmlImg} alt="HTML" /></SwiperSlide>
@@ -55,15 +57,18 @@ function About() {
                                     <SwiperSlide><img src={bootstrapImg} alt="Bootstrap" /></SwiperSlide>
                                     <SwiperSlide><img src={gitImg} alt="Git" /></SwiperSlide>
                                     <SwiperSlide><img src={wordpessImg} alt="WordPress" /></SwiperSlide>
+                                    <SwiperSlide><img src={herokuImg} alt="Ubuntu" /></SwiperSlide>
+                                    <SwiperSlide><img src={vscodeImg} alt="Ubuntu" /></SwiperSlide>
                                     <SwiperSlide><img src={ubuntuImg} alt="Ubuntu" /></SwiperSlide>
                                 </Swiper>
                             </>
                         </Col>
                         <Col md={8}>
                             <p className="about-description-text">
-                                Soy una persona creativa, curiosa y orientada a resultados. Me encanta enfrentar desafíos
-                                tecnológicos y buscar soluciones innovadoras. Adaptación rápida si de trabajar
-                                en equipo se trata.
+                                Desarrollador Web con experiencia en proyectos Full Stack y prácticas DevOps.
+                                Me especializo en la creación de aplicaciones web modernas, escalables y orientadas al rendimiento,
+                                desde la interfaz hasta la infraestructura. Disfruto optimizar procesos, automatizar despliegues
+                                y transformar ideas en soluciones digitales funcionales.
                             </p>
                         </Col>
                     </Row>

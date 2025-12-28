@@ -43,7 +43,6 @@ function Footer() {
                                 </a>
                             </li>
                         </ul>
-                        <a href="mailto:jesus.virgencer@gmail.com" className="email-footer-text">jesus.virgencer@gmail.com</a>
                     </Col>
                     <Col className="footer-copyright">
                         <p className="copyright-text">© {new Date().getFullYear()} Jesús Virgen. Todos los derechos reservados.</p>

@@ -1,8 +1,9 @@
 .footer {
-    background-color: var(--bg-color-base);
+    background-color: var(--bg-navbar);
     bottom: 0;
     padding: 45px 45px 0 45px;
-
+    position: relative;
+    border-top: 2px solid var(--border-glow);
     .footer-col {
         margin-bottom: 20px;
 
@@ -19,6 +20,7 @@
 
 .footer-icons {
     margin-bottom: 45px;
+    padding-left: 0;
 
     .social-icons {
         svg {

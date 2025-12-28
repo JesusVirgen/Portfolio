@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import Button from "./Button";
 
-function Card({ imagen, titulo, descripcion, src}) {
+function Card({ imagen, titulo, descripcion, src, buttonText}) {
     const [show, setShown] = useState(false);
 
     const props3 = useSpring({
@@ -10,7 +10,6 @@ function Card({ imagen, titulo, descripcion, src}) {
         boxShadow: show
         ? "0 20px 25px rgb(0 0 0 / 25%)"
         : "0 2px 10px rgb(0 0 0 / 8%)",
-        backgroundColor: "#2f2f2f",
         color: "#fff",
         borderRadius: "25px"
     });
@@ -22,11 +21,15 @@ function Card({ imagen, titulo, descripcion, src}) {
             onMouseEnter={() => setShown(true)}
             onMouseLeave={() => setShown(false)}
         >
-            <img src={imagen} alt={titulo} />
-            <h3>{titulo}</h3>
-            <p>{descripcion}</p>
+            <div className="card-carousel-img">
+                <img src={imagen} alt={titulo} />
+            </div>
+            <div className="card-carousel-text">
+                <h3>{titulo}</h3>
+                <p>{descripcion}</p>
+            </div>
             <div className="btnn">
-                <Button src={src} text="Código" />
+                <Button src={src} text={buttonText || "Código"} />
             </div>
         </animated.div>
     );

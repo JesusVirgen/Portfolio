@@ -2,6 +2,11 @@ html {
     /*colors*/
     --image-gradient: linear-gradient(to bottom left,rgba(17, 16, 16, 0.863), rgba(12, 10, 22, 0.863));
     --image-gradient-light: linear-gradient(to bottom left,rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.795));
+    --title-gradient: linear-gradient(90deg, #8b5cf6, #38bdf8, #22d3ee, #a78bfa);
+    --sub-title-gradient: linear-gradient(161deg,rgba(71, 69, 245, 1) 0%, rgba(167, 92, 224, 1) 100%);
+    --borders-gradient: linear-gradient(to right, rgb(6, 182, 212), rgb(99, 102, 241));
+    --timeline-gradient: linear-gradient(164deg,rgb(207, 74, 255) 0%, rgba(140, 0, 171, 1) 22%, rgba(20, 0, 133, 1) 57%, rgb(71, 255, 255) 100%);
+    --bg-btn-gradient: linear-gradient(135deg, #7c3aed, #4f46e5);
     --imp-text-color: #1c8b9e;
     --bg-color-base: #2f2f2f;
     --bg-color-secondary: #bdbdbd;
@@ -15,9 +20,8 @@ html {
     --bg-color-css: #264de4;
     --bg-color-tailwindcss: #a5f3fc;
     --bg-color-git: #F1502F;
-    --bg-navbar: #000000d0;
-
-
+    --bg-navbar: #111827e6;
+    --border-glow: rgba(99, 102, 241, 0.3);
     /*spaicing*/
     --space-base: 3em;
 

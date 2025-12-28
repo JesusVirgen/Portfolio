@@ -9,6 +9,7 @@ import myImg from "../../Assets/profile.jpeg";
 function Home() {
     return (
         <div>
+            <div className="bg-main"></div>
             <section id="home">
                 <div fluid className="home-section">
                     <Container className="home-content">

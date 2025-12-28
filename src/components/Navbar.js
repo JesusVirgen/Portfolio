@@ -8,6 +8,7 @@ import logo from "../Assets/j-image.png";
 function NavBar() {
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
+    const [activeLink, setActiveLink] = useState("home");
 
     function scrollHandler() {
         if (window.scrollY >= 20) {
@@ -20,30 +21,38 @@ function NavBar() {
     window.addEventListener("scroll", scrollHandler);
 
     return (
-        <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
+        <Navbar
+            expanded={expand}
+            fixed="top"
+            expand="md"
+            className={navColour ? "sticky" : "navbar"}
+        >
             <Container className="navbar-content">
                 <Navbar.Brand className="d-flex">
                     <img src={logo} alt="Logo" className="navbar-logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle
+                    className="custom-toggler"
                     aria-controls="responsive-navbar-nav"
                     onClick={() => updateExpanded(expand ? false : "expanded")}
-                    >
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                >
+                    <span />
+                    <span />
+                    <span />
                 </Navbar.Toggle>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Item>
                             <ScrollLink
                                 to="home"
-                                spy={true}
                                 smooth={true}
                                 duration={300}
                                 offset={-40}
-                                onClick={() => updateExpanded(false)}
-                                className="nav-link"
+                                className={`nav-link ${activeLink === "home" ? "active" : ""}`}
+                                onClick={() => {
+                                    setActiveLink("home");
+                                    updateExpanded(false);
+                                }}
                             >
                                 Inicio
                             </ScrollLink>
@@ -52,12 +61,14 @@ function NavBar() {
                         <Nav.Item>
                             <ScrollLink
                                 to="about"
-                                spy={true}
                                 smooth={true}
                                 duration={300}
                                 offset={-40}
-                                onClick={() => updateExpanded(false)}
-                                className="nav-link"
+                                className={`nav-link ${activeLink === "about" ? "active" : ""}`}
+                                onClick={() => {
+                                    setActiveLink("about");
+                                    updateExpanded(false);
+                                }}
                             >
                                 Sobre mi
                             </ScrollLink>
@@ -66,12 +77,14 @@ function NavBar() {
                         <Nav.Item>
                             <ScrollLink
                                 to="experience"
-                                spy={true}
                                 smooth={true}
                                 duration={300}
                                 offset={-40}
-                                onClick={() => updateExpanded(false)}
-                                className="nav-link"
+                                className={`nav-link ${activeLink === "experience" ? "active" : ""}`}
+                                onClick={() => {
+                                    setActiveLink("experience");
+                                    updateExpanded(false);
+                                }}
                             >
                                 Experiencia
                             </ScrollLink>
@@ -80,12 +93,14 @@ function NavBar() {
                         <Nav.Item>
                             <ScrollLink
                                 to="projects"
-                                spy={true}
                                 smooth={true}
                                 duration={300}
                                 offset={-40}
-                                onClick={() => updateExpanded(false)}
-                                className="nav-link"
+                                className={`nav-link ${activeLink === "projects" ? "active" : ""}`}
+                                onClick={() => {
+                                    setActiveLink("projects");
+                                    updateExpanded(false);
+                                }}
                             >
                                 Proyectos
                             </ScrollLink>
@@ -94,12 +109,14 @@ function NavBar() {
                         <Nav.Item>
                             <ScrollLink
                                 to="contact"
-                                spy={true}
                                 smooth={true}
                                 duration={300}
                                 offset={-40}
-                                onClick={() => updateExpanded(false)}
-                                className="nav-link"
+                                className={`nav-link ${activeLink === "contact" ? "active" : ""}`}
+                                onClick={() => {
+                                    setActiveLink("contact");
+                                    updateExpanded(false);
+                                }}
                             >
                                 Contacto
                             </ScrollLink>

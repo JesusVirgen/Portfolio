@@ -1,7 +1,27 @@
 @import url('https://fonts.cdnfonts.com/css/murray-corn');
 
-#home {
-    background-color: var(--bg-color-base); 
+.bg-main {
+    min-height: 100vh;
+    background-color: #05070f;
+    background-image:
+    linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+    ),
+    linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px
+    ),
+    radial-gradient(
+        circle at center,
+        rgba(34, 211, 238, 0.15),
+        transparent 60%
+    );
+    background-size: 80px 80px, 80px 80px, 100% 100%;
+    position: fixed;
+    min-width: 100vw;
 }
 
 .wave {
@@ -41,6 +61,7 @@
 
 .home-section {
     min-height: 100vh;
+    position: relative;
 }
 
 .home-content {
@@ -68,12 +89,20 @@
 }
 
 .main-name {
-    color: var(--imp-text-color);
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .Typewriter__wrapper {
     font-size: 35px;
-    color: var(--imp-text-color);
+    background: var(--sub-title-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     font-weight: 500;
 }
 
@@ -98,34 +127,6 @@
 
 .img-fluid {
     border-radius: 25%; 
-}
-
-.swiper {
-    width: 240px;
-    height: 320px;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.swiper-slide {
-    width: fit-content !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    border: 5px solid var(--imp-text-color);
-    background-color: var(--bg-color-base);
-}
-
-.swiper-slide img {
-    width: 80%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 .home-row {
